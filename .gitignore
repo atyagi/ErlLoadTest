@@ -1,0 +1,9 @@
+# Erlang specifics
+.eunit
+deps
+*.o
+*.beam
+*.plt
+
+#Eclipse/Erlide nonsense
+.project
