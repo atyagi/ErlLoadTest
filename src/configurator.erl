@@ -4,7 +4,7 @@
 -export([create_config/3]).
 
 create_config(WorkerModule, WorkerFunction, Key) ->
-	ok = init_bson_mongo(),
+%	ok = init_bson_mongo(),
 	Host = {?MONGO_HOST, ?MONGO_PORT},
 	{ok, Conn} = mongo:connect(Host),
 	insert(Conn, Key, {WorkerModule, WorkerFunction}).
